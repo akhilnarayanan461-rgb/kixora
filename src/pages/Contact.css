@@ -1,0 +1,44 @@
+.contact-form {
+    display: grid;
+    gap: 20px;
+    max-width: 600px;
+    margin-top: 30px;
+}
+
+.contact-form label {
+    display: grid;
+    gap: 10px;
+    font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    min-width: 0;
+}
+
+.contact-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact-form .button {
+    justify-self: start;
+}
+
+.contact-form p {
+    margin: 0;
+}
+
+.contact-form [role="status"] {
+    padding: 14px 16px;
+    border-radius: 6px;
+    background-color: #edf6ec;
+    color: #245c29;
+}
+
+@media (max-width: 480px) {
+    .contact-form .button {
+        width: 100%;
+    }
+}

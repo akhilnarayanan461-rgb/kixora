@@ -1,0 +1,148 @@
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 80px 40px;
+}
+
+.hero-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.hero-content h1 {
+    margin: 0 0 20px;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #111111;
+}
+
+.hero-content p {
+    margin: 0 0 28px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #a99b9b;
+}
+
+.hero-content a {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff5e1e;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+}
+
+.hero-content a:hover {
+    background-color: #d9470c;
+}
+
+.hero-image {
+    flex: 1;
+    min-width: 0;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 30px 70px;
+    background-color:#f4f1ed;
+    border-radius: 10px;
+    position: relative;
+}
+.hero-image-label {
+    position: absolute;
+    left: 24px;
+    bottom: 20px;
+}
+
+.hero-image-label h3 {
+    margin: 0 0 6px;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.hero-image-label p {
+    margin: 0;
+    font-size: 12px;
+    color: #6c6b66;
+}
+.hero-image img {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .hero-image {
+        min-height: 250px;
+        padding: 20px;
+        
+    }
+}.hero-image img {
+    transition: transform 0.3s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.03);
+}
+.hero h1 span{
+    color: #ff5e1e;
+}
+ .hero-content .hero-label{
+    font-size: 11px;
+    margin:0 0 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #111;
+}
+.hero-label span{
+    color: #ff5e1e;
+    font-size: 12px;
+    margin-right: 8px;
+    font-weight: 700;
+}
+.hero-content .hero-description {
+    max-width: 380px;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #6c6b66;
+    margin: 20px 0  28px;
+}
+.hero-action{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+.hero-content .hero-secondary{
+    padding: 0;
+    background-color: transparent;
+    color: #111;
+    font-size: 13px;
+}
+.hero-content .hero-secondary:hover{
+    background-color: transparent;
+    color:#ff5e1e;
+}
